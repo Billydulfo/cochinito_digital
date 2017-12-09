@@ -1,0 +1,20 @@
+-- Table: alcancias
+
+-- DROP TABLE alcancias;
+
+CREATE TABLE alcancias
+(
+  propietario character varying(50) NOT NULL,
+  fecha character varying(20),
+  centavos integer,
+  peso integer,
+  dos_pesos integer,
+  cinco_pesos integer,
+  diez_pesos integer,
+  CONSTRAINT p_key_alcancias PRIMARY KEY (propietario)
+)
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE alcancias
+  OWNER TO postgres;
